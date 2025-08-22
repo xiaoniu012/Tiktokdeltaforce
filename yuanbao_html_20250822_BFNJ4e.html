@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Delta Force Elite Streamer Team | TikTok Official Certification</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --tiktok-pink: #FE2C55;
+            --tiktok-blue: #25F4EE;
+            --tiktok-dark: #121212;
+            --tiktok-black: #000000;
+            --delta-green: #00ff8c;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, var(--tiktok-dark) 0%, var(--tiktok-black) 100%);
+            color: #fff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 480px;
+            margin: 0 auto;
+            padding: 0;
+            position: relative;
+            background: var(--tiktok-black);
+            min-height: 100vh;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+        }
+        
+        .header {
+            position: relative;
+            height: 60vh;
+            overflow: hidden;
+        }
+        
+        .slideshow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .slide.active {
+            opacity: 1;
+        }
+        
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            padding: 30px 20px 20px;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            color: var(--delta-green);
+            text-shadow: 0 0 20px rgba(0, 255, 140, 0.8);
+            letter-spacing: 1px;
+        }
+        
+        .title {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, var(--tiktok-blue), var(--delta-green));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        
+        .content {
+            padding: 25px 20px;
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            margin: 25px 0 15px;
+            color: var(--tiktok-blue);
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-title i {
+            margin-right: 10px;
+        }
+        
+        .benefits {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .benefit-card {
+            background: rgba(40, 40, 40, 0.6);
+            border-radius: 12px;
+            padding: 15px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .benefit-icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: var(--delta-green);
+        }
+        
+        .benefit-title {
+            font-size: 1rem;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        
+        .benefit-desc {
+            font-size: 0.85rem;
+            opacity: 0.8;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .stat-item {
+            padding: 10px;
+        }
+        
+        .stat-number {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--tiktok-pink);
+            line-height: 1;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        .tiktok-section {
+            background: rgba(30, 30, 30, 0.7);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 25px 0;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .tiktok-logo {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 15px;
+            display: inline-block;
+            background: linear-gradient(90deg, var(--tiktok-blue), var(--tiktok-pink));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .tiktok-text {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+        
+        .cta-button {
+            display: block;
+            width: 100%;
+            background: linear-gradient(90deg, var(--tiktok-pink), #ff3750);
+            color: white;
+            padding: 18px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.3rem;
+            text-align: center;
+            margin: 30px 0;
+            box-shadow: 0 5px 25px rgba(254, 44, 85, 0.5);
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(254, 44, 85, 0.7);
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(10, 10, 10, 0.9);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .footer-text {
+            font-size: 0.9rem;
+            opacity: 0.7;
+            margin-bottom: 10px;
+        }
+        
+        .small-text {
+            font-size: 0.8rem;
+            opacity: 0.6;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: var(--delta-green);
+            color: #000;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin: 5px 0;
+        }
+        
+        @media (max-width: 400px) {
+            .logo {
+                font-size: 2.2rem;
+            }
+            
+            .title {
+                font-size: 1.8rem;
+            }
+            
+            .benefits {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header with Slideshow -->
+        <div class="header">
+            <div class="slideshow">
+                <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1593305841991-05c297ba4575?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+            </div>
+            
+            <div class="overlay">
+                <div class="logo">DELTA FORCE</div>
+                <h1 class="title">Elite Streamer Recruitment Program</h1>
+                <p class="subtitle">Join TikTok's Top Gaming Community and Enjoy Exclusive Benefits</p>
+                <div class="badge">Only 50 Spots Left</div>
+            </div>
+        </div>
+        
+        <!-- Content Section -->
+        <div class="content">
+            <h2 class="section-title"><i class="fas fa-star"></i> Why Join Us?</h2>
+            <p>We're seeking passionate Delta Force players to transform your gaming enthusiasm into a professional streaming career. As a TikTok officially certified guild, we provide all the support you need to succeed.</p>
+            
+            <div class="benefits">
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3 class="benefit-title">Growth Support</h3>
+                    <p class="benefit-desc">Promote your content to millions of gaming fans</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-dollar-sign"></i></div>
+                    <h3 class="benefit-title">Higher Earnings</h3>
+                    <p class="benefit-desc">Higher revenue sharing and bonus plans</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-users"></i></div>
+                    <h3 class="benefit-title">Community Resources</h3>
+                    <p class="benefit-desc">Join the top Delta Force player community</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-gem"></i></div>
+                    <h3 class="benefit-title">Exclusive Privileges</h3>
+                    <p class="benefit-desc">Priority access to game testing and events</p>
+                </div>
+            </div>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">80%</div>
+                    <div class="stat-label">Revenue Share</div>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-number">1M+</div>
+                    <div class="stat-label">Community Players</div>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Support</div>
+                </div>
+            </div>
+            
+            <h2 class="section-title"><i class="fas fa-cog"></i> How It Works</h2>
+            <p>We provide comprehensive support to help you expand your audience and maximize revenue:</p>
+            <ul style="padding-left: 20px; margin: 15px 0;">
+                <li>Professional streaming setup guidance</li>
+                <li>Content strategy and editing support</li>
+                <li>Collaboration opportunities with top creators</li>
+                <li>Weekly training sessions</li>
+                <li>Monetization strategy development</li>
+            </ul>
+            
+            <div class="tiktok-section">
+                <div class="tiktok-logo">
+                    <i class="fab fa-tiktok"></i>
+                </div>
+                <p class="tiktok-text">As an officially certified TikTok partner, we have direct access to platform features and support to help you grow faster.</p>
+                <div class="badge">Official Partner</div>
+            </div>
+            
+            <a href="https://www.tiktok.com/t/ZMBXHm7ok/" class="cta-button">
+                Apply for Elite Streamer Status Now
+            </a>
+            
+            <p class="small-text">Application includes review of your Delta Force gameplay and social media influence. Limited spots available - apply soon.</p>
+        </div>
+        
+        <div class="footer">
+            <p class="footer-text">© 2025 Delta Force Elite Streamer Program</p>
+            <p class="small-text">This program is not affiliated with Delta Force or TikTok. All game content belongs to their respective owners.</p>
+        </div>
+    </div>
+
+    <script>
+        // Simple slideshow functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('.slide');
+            let currentSlide = 0;
+            
+            function nextSlide() {
+                slides[currentSlide].classList.remove('active');
+                currentSlide = (currentSlide + 1) % slides.length;
+                slides[currentSlide].classList.add('active');
+            }
+            
+            setInterval(nextSlide, 4000);
+        });
+    </script>
+</body>
+</html>
